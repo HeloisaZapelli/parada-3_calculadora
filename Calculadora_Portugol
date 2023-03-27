@@ -1,0 +1,55 @@
+programa {
+  funcao inicio() {
+    
+    inteiro n1, n2, resp, op
+    caracter refazer
+
+    enquanto (refazer != "n"){ 
+
+    escreva ("Digite um n�mero: ")
+    leia(n1)
+
+    escreva ("Digite outro n�mero: ")
+    leia(n2)
+
+    escreva ("INFORME A OPERA��O DESEJADA: \n")
+
+    escreva("1 - SOMA \n")
+    escreva("2 - SUBTRA��O \n")
+    escreva("3 - MULTIPLICA��O \n")
+    escreva("4 - DIVIS�O \n")
+    leia(op)
+
+    escolha(op){
+
+    caso 1:
+      resp = n1 + n2
+      escreva(n1, " + ", n2, " = ", resp)
+      pare
+
+    caso 2:
+      resp = n1 - n2
+      escreva(n1, " - ", n2, " = ", resp)
+      pare
+
+    caso 3:
+      resp = n1 * n2
+      escreva(n1, " * ", n2, " = ", resp)
+      pare
+
+    caso 4:
+      resp = n1 / n2
+      escreva(n1, " / ", n2, " = ", resp)
+      pare
+
+    caso contrario
+      escreva("OP��O INV�LIDA!!!")
+
+    }
+
+    escreva("\n Deseja realizar outra opera��o? (s/ n): ")
+    leia(refazer)
+    }
+
+  }
+}
